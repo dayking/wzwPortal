@@ -5,7 +5,7 @@ spring:
   application:
     name: wzwPortal
   profiles:
-    active: pro
+    active: test
 
 ---
 #正式环境
@@ -19,6 +19,8 @@ server:
 ---
 #测试环境
 spring:
-  profiles: wzwPortal-test
+  application:
+    name: wzwPortal-test
+  profiles: test
 server:
   port: 8198

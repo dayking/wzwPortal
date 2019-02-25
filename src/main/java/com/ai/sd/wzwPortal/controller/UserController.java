@@ -14,6 +14,7 @@ import java.util.*;
  * @remark bug no no no
  */
 @RestController
+//@RestController注解能够使项目支持Rest
 @RequestMapping(value="/users")
 // 通过这里配置使下面的映射都在/users下
 public class UserController {
