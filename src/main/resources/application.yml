@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: wzwPortal
+server:
+  port: 8080
