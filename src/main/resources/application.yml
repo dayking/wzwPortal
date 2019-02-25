@@ -1,5 +1,24 @@
+server:
+  tomcat:
+    uri-encoding: utf-8
 spring:
   application:
     name: wzwPortal
+  profiles:
+    active: pro
+
+---
+#正式环境
+spring:
+  application:
+    name: wzwPortal-pro
+  profiles: pro
 server:
-  port: 8080
+  port: 9527
+
+---
+#测试环境
+spring:
+  profiles: wzwPortal-test
+server:
+  port: 8198
